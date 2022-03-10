@@ -22,5 +22,4 @@ case "$2" in
 	;;
 esac
 
-#cut $file -d , -f $colnum | tail -n +2 | { sum=0; lc=0; while read n; do sum=$(($sum +$n));lc=$(($lc+1)); done; mean=$(echo "scale=5; $sum/$lc"|bc); echo $mean; }
 cut $file -d , -f $colnum  | tail -n +2 | { sum=0; lc=0; while read n; do sum=$(echo "$sum +$n"|bc);lc=$(($lc+1)); done; mean=$(echo "scale=5; $sum/$lc"|bc); echo $mean; } 
