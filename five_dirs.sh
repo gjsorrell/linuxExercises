@@ -8,7 +8,7 @@ do
 	dir_num=$dir$i;
 	mkdir $dir_num;
 	j=1;
-	while [[ $j -le 5 ]];
+	while [[ $j -le 4 ]];
 	do
 		dir_num_file=$dir_num/file$j;
 		touch $dir_num_file;
