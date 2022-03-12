@@ -6,7 +6,7 @@ case "$1" in
 	colnum=$1
    	;;
     *)
-	echo "usage: $0 <column> [filename]" 1>&2
+	echo "usage: $0 <column> [file.csv]" 1>&2
 	exit 0
 	;;
 esac
